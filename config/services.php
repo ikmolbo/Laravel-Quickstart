@@ -35,34 +35,40 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    // oAuth Login services
+    
     'strava' => [
       'client_id' => env('STRAVA_ID'),
       'client_secret' => env('STRAVA_SECRET'),
       'redirect' => env('STRAVA_REDIRECT_URI'),
-      'scope' => env('STRAVA_SCOPE'),
+      'scopes' => ['view_private'],
     ],
 
     'google' => [
       'client_id' => env('GOOGLE_ID'),
       'client_secret' => env('GOOGLE_SECRET'),
       'redirect' => env('GOOGLE_REDIRECT_URI'),
+      'scopes' => []
     ],
 
     'facebook' => [
       'client_id' => env('FACEBOOK_ID'),
       'client_secret' => env('FACEBOOK_SECRET'),
       'redirect' => env('FACEBOOK_REDIRECT_URI'),
+      'scopes' => []
     ],
 
     'twitter' => [
       'client_id' => env('TWITTER_ID'),
       'client_secret' => env('TWITTER_SECRET'),
       'redirect' => env('TWITTER_REDIRECT_URI'),
+      'scopes' => []
     ],
 
     'facebook' => [
         'client_id' => env('FACEBOOK_ID'),
         'client_secret' => env('FACEBOOK_SECRET'),
         'redirect' => env('FACEBOOK_REDIRECT_URI'),
+        'scopes' => []
     ],
 ];
