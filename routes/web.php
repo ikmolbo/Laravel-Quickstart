@@ -19,3 +19,6 @@ Route::get('/callback/{provider}', 'Auth\SocialAuthController@callback');
 // Dev only
 Route::any('adminer', '\Miroc\LaravelAdminer\AdminerAutologinController@index');
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+Route::get('kitchen-sink', function() {
+  return view('kitchen-sink');
+});

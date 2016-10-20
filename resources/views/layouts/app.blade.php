@@ -60,6 +60,7 @@
                             <li><a href="{{ url('adminer') }}">SQL Admin</a></li>
                             <li><a href="{{ url('api-tester') }}">API Tester</a></li>
                             <li><a href="{{ url('logs') }}">Log viewer</a></li>
+                            <li><a href="{{ url('kitchen-sink') }}">Bootstrap components</a></li>
                           </ul>
                         </li>
 

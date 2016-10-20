@@ -5,9 +5,11 @@ namespace App\Http\Controllers\Auth;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Models\SocialAccount;
 use App\Http\Controllers\Controller;
 use Socialite;
 use App\SocialAccountService;
+use Log;
 
 class SocialAuthController extends Controller
 {
@@ -34,11 +36,12 @@ class SocialAuthController extends Controller
         return Socialite::driver($provider)->scopes(config('services.'.$provider.'.scopes'))->redirect();
     }
 
-    public function callback(SocialAccountService $service, $provider)
+    public function callback(SocialAccount $social, $provider)
     {
-
-        $user = $service->createOrGetUser(Socialite::driver($provider), $provider);
-
+        // To fix problem with logging into several services at once, add ->stateless().
+        // See: http://stackoverflow.com/questions/30660847/laravel-socialite-invalidstateexception
+        // $user = $service->createOrGetUser(Socialite::driver($provider)->stateless(), $provider);
+        $user = $social->createOrUpdateUser(Socialite::driver($provider)->stateless(), $provider);
         auth()->login($user);
 
         return redirect()->to($this->redirectTo);
