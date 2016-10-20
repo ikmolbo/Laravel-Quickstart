@@ -1,27 +1,36 @@
-# Laravel PHP Framework
+# Laravel 5.3 Quickstart
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+This repository comes set up to get started quickly with Laravel 5.3. It is set up to include:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+### Getting Started
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+* I use [Valet](https://laravel.com/docs/5.3/valet). This means zero setup, and the site is ready to go immediately at `http://[project].dev`
+* Run `composer install` or `php composer install`...
+* Run `php artisan migrate` to set up the database.
+* Run `npm install` then `gulp` to set up node modules and process CSS, JS, and copy files to `/public` folder.
 
-## Official Documentation
+### Database
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+* A SQLite database for getting up and running without fuss.
 
-## Contributing
+### Authentication
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+* User authentication scaffolding set up, and database tables created.
+* Social login via oAuth and Laravel Socialite. Google, Facebook, Twitter and Strava ready to go, just add credentials to `.env` file (or `config/services.php`). [More available](http://socialiteproviders.github.io).
 
-## Security Vulnerabilities
+### CSS and Javascript
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+* Run `gulp watch` to keep watching the resources folder for changes to the SASS and JS files.
+* Bootstrap SASS is installed via npm (in `packages.json` file), and is processed by Gulp/Elixir.
+* All styling should be done in the `resources/assets/sass/app.scss` and `resources/assets/sass/_variables.scss` files.
 
-## License
+### Development tools (require-dev only)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+* [Adminer](https://www.adminer.org) database tool accessible through navbar link (`/adminer`). Logs in automatically to the active database when opened.
+* [API testing tool](https://github.com/asvae/laravel-api-tester) through navbar link (`/api-tester`).
+* [Tracy debugging tool](https://github.com/recca0120/laravel-tracy).
+* [Log Viewer](https://github.com/rap2hpoutre/laravel-log-viewer)
+
+### More Laravel tools
+
+Lists of useful Laravel packages are found [here](https://github.com/TimothyDJones/awesome-laravel) and [here](https://github.com/chiraggude/awesome-laravel).

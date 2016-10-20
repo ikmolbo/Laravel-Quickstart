@@ -30,13 +30,13 @@ return [
     ],
 
     'stripe' => [
-        'model' => App\User::class,
+        'model' => App\Models\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
 
     // oAuth Login services
-    
+
     'strava' => [
       'client_id' => env('STRAVA_ID'),
       'client_secret' => env('STRAVA_SECRET'),

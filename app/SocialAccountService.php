@@ -3,6 +3,7 @@
 namespace App;
 
 use Laravel\Socialite\Contracts\Provider;
+use App\Models\SocialAccount;
 use Hash;
 
 class SocialAccountService

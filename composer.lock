@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a9554331077524e5435af7bb9966934c",
-    "content-hash": "28167a22732005dd95dd441b209301f5",
+    "hash": "a34a5fc79591233a40a0c48217f64928",
+    "content-hash": "8f6d26d8aac46d9ad380d5637e5f184c",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -331,6 +331,72 @@
                 "uri"
             ],
             "time": "2016-06-24 23:00:38"
+        },
+        {
+            "name": "haleks/laravel-markdown",
+            "version": "v0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/haleks/laravel-markdown.git",
+                "reference": "de96148db8530cee326da22f0445a5254c4e9c4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/haleks/laravel-markdown/zipball/de96148db8530cee326da22f0445a5254c4e9c4c",
+                "reference": "de96148db8530cee326da22f0445a5254c4e9c4c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.0.*|5.1.*|5.2.*|5.3.*",
+                "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*",
+                "illuminate/view": "5.0.*|5.1.*|5.2.*|5.3.*",
+                "league/commonmark": "0.10.*|0.12.*|0.13.*|0.14.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "orchestra/testbench": "~3.2",
+                "phpunit/phpunit": "~4.0",
+                "webuni/commonmark-attributes-extension": "0.3.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Haleks\\Markdown\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandre Villeneuve",
+                    "email": "haleksviller@gmail.com"
+                }
+            ],
+            "description": "Laravel Markdown integrate markdown 'curly' braces inside the blade template engine, adding view extension and also giving the possibility of extending CommonMark.",
+            "keywords": [
+                "Alex Villeneuve",
+                "AlexVilleneuve",
+                "Alexandre Villeneuve",
+                "AlexandreVilleneuve",
+                "Laravel Markdown",
+                "Laravel-Markdown",
+                "common mark",
+                "commonmark",
+                "framework",
+                "haleks",
+                "haleksandre",
+                "laravel",
+                "markdown"
+            ],
+            "time": "2016-08-25 15:55:23"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -660,6 +726,75 @@
             "time": "2016-06-22 12:40:16"
         },
         {
+            "name": "league/commonmark",
+            "version": "0.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/commonmark.git",
+                "reference": "b73c0b7288bd0e6f9f56bd0b20d0657214b91838"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/b73c0b7288bd0e6f9f56bd0b20d0657214b91838",
+                "reference": "b73c0b7288bd0e6f9f56bd0b20d0657214b91838",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.4.8"
+            },
+            "replace": {
+                "colinodell/commonmark-php": "*"
+            },
+            "require-dev": {
+                "cebe/markdown": "~1.0",
+                "erusev/parsedown": "~1.0",
+                "jgm/commonmark": "0.25",
+                "michelf/php-markdown": "~1.4",
+                "mikehaertl/php-shellcommand": "~1.2.0",
+                "phpunit/phpunit": "~4.3|~5.0",
+                "scrutinizer/ocular": "~1.1",
+                "symfony/finder": "~2.3|~3.0"
+            },
+            "suggest": {
+                "league/commonmark-extras": "Library of useful extensions including smart punctuation"
+            },
+            "bin": [
+                "bin/commonmark"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.15-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\CommonMark\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Colin O'Dell",
+                    "email": "colinodell@gmail.com",
+                    "homepage": "https://www.colinodell.com",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Markdown parser for PHP based on the CommonMark spec",
+            "homepage": "https://github.com/thephpleague/commonmark",
+            "keywords": [
+                "commonmark",
+                "markdown",
+                "parser"
+            ],
+            "time": "2016-07-02 18:48:39"
+        },
+        {
             "name": "league/flysystem",
             "version": "1.0.30",
             "source": {
@@ -804,49 +939,6 @@
                 "twitter"
             ],
             "time": "2016-08-17 00:36:58"
-        },
-        {
-            "name": "miroc/laravel-adminer",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/miroc/Laravel-Adminer.git",
-                "reference": "a9d51af41c35d06d26e12ed75c7b315935faf4aa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/miroc/Laravel-Adminer/zipball/a9d51af41c35d06d26e12ed75c7b315935faf4aa",
-                "reference": "a9d51af41c35d06d26e12ed75c7b315935faf4aa",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "5.*",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Miroc\\LaravelAdminer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Miroslav Svitok",
-                    "email": "mirosvitok@gmail.com"
-                }
-            ],
-            "description": "Adminer (by Jakub Vrana) wrapper for Laravel 5",
-            "keywords": [
-                "adminer",
-                "database",
-                "laravel5",
-                "management"
-            ],
-            "time": "2016-06-20 21:51:07"
         },
         {
             "name": "monolog/monolog",
@@ -1364,6 +1456,52 @@
                 "uuid"
             ],
             "time": "2016-10-02 15:51:17"
+        },
+        {
+            "name": "rap2hpoutre/laravel-log-viewer",
+            "version": "v0.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rap2hpoutre/laravel-log-viewer.git",
+                "reference": "3ff06fb16e9cf8bfb581d29bd7da3cd3c0baa5d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rap2hpoutre/laravel-log-viewer/zipball/3ff06fb16e9cf8bfb581d29bd7da3cd3c0baa5d7",
+                "reference": "3ff06fb16e9cf8bfb581d29bd7da3cd3c0baa5d7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.2.*|5.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/controllers"
+                ],
+                "psr-0": {
+                    "Rap2hpoutre\\LaravelLogViewer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "rap2hpoutre",
+                    "email": "raphaelht@gmail.com"
+                }
+            ],
+            "description": "A Laravel log reader",
+            "keywords": [
+                "log",
+                "log-reader",
+                "log-viewer",
+                "logging"
+            ],
+            "time": "2016-06-23 14:07:52"
         },
         {
             "name": "socialiteproviders/manager",
@@ -2330,6 +2468,56 @@
     ],
     "packages-dev": [
         {
+            "name": "asvae/laravel-api-tester",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asvae/laravel-api-tester.git",
+                "reference": "0132f11e0b09afe8c41b21e75565727762600dad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asvae/laravel-api-tester/zipball/0132f11e0b09afe8c41b21e75565727762600dad",
+                "reference": "0132f11e0b09afe8c41b21e75565727762600dad",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "laravel/framework": "5.2.*",
+                "mockery/mockery": "^0.9.5",
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "firebase/token-generator": "Token generator for firebase",
+                "ktamas77/firebase-php": "Keep your requests stored in cloud"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Asvae\\ApiTester\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yauheni Prakopchyk",
+                    "email": "ontrew@gmail.com"
+                }
+            ],
+            "description": "Api tester for Laravel Framework",
+            "keywords": [
+                "api",
+                "debug",
+                "laravel"
+            ],
+            "time": "2016-09-08 12:05:46"
+        },
+        {
             "name": "doctrine/instantiator",
             "version": "1.0.5",
             "source": {
@@ -2475,6 +2663,49 @@
                 "test"
             ],
             "time": "2015-05-11 14:41:42"
+        },
+        {
+            "name": "miroc/laravel-adminer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/miroc/Laravel-Adminer.git",
+                "reference": "a9d51af41c35d06d26e12ed75c7b315935faf4aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/miroc/Laravel-Adminer/zipball/a9d51af41c35d06d26e12ed75c7b315935faf4aa",
+                "reference": "a9d51af41c35d06d26e12ed75c7b315935faf4aa",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Miroc\\LaravelAdminer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Miroslav Svitok",
+                    "email": "mirosvitok@gmail.com"
+                }
+            ],
+            "description": "Adminer (by Jakub Vrana) wrapper for Laravel 5",
+            "keywords": [
+                "adminer",
+                "database",
+                "laravel5",
+                "management"
+            ],
+            "time": "2016-06-20 21:51:07"
         },
         {
             "name": "mockery/mockery",
@@ -3177,6 +3408,125 @@
             "time": "2016-10-09 07:01:45"
         },
         {
+            "name": "recca0120/laravel-tracy",
+            "version": "v1.7.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/recca0120/laravel-tracy.git",
+                "reference": "9f22caef17489493d62e22d083095cec78b99e59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/recca0120/laravel-tracy/zipball/9f22caef17489493d62e22d083095cec78b99e59",
+                "reference": "9f22caef17489493d62e22d083095cec78b99e59",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "~5.1",
+                "illuminate/database": "~5.1",
+                "illuminate/routing": "~5.1",
+                "illuminate/session": "~5.1",
+                "illuminate/support": "~5.1",
+                "php": ">=5.5.9",
+                "recca0120/terminal": "~1.6.1",
+                "tracy/tracy": "^2.4.3"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.4",
+                "nesbot/carbon": "~1.20",
+                "phpunit/phpunit": "~4.8|~5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Recca0120\\LaravelTracy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "recca0120",
+                    "email": "recca0120@gmail.com"
+                }
+            ],
+            "description": "A Laravel Package to integrate Nette Tracy Debugger",
+            "keywords": [
+                "debug",
+                "debugbar",
+                "error",
+                "error handler",
+                "laravel",
+                "nette",
+                "profiler",
+                "tracy",
+                "webprofiler"
+            ],
+            "time": "2016-10-01 05:20:44"
+        },
+        {
+            "name": "recca0120/terminal",
+            "version": "v1.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/recca0120/laravel-terminal.git",
+                "reference": "5d4052cab9309a242675ca2276a49390a5794b44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/recca0120/laravel-terminal/zipball/5d4052cab9309a242675ca2276a49390a5794b44",
+                "reference": "5d4052cab9309a242675ca2276a49390a5794b44",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "~5.1",
+                "illuminate/database": "~5.1",
+                "illuminate/filesystem": "~5.1",
+                "illuminate/routing": "~5.1",
+                "php": ">=5.5.9",
+                "symfony/finder": "2.7.*|2.8.*|3.0.*|3.1.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.4",
+                "nesbot/carbon": "~1.20",
+                "phpunit/phpunit": "~4.8|~5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Recca0120\\Terminal\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "recca0120",
+                    "email": "recca0120@gmail.com"
+                }
+            ],
+            "description": "run laravel artisan command in web application",
+            "keywords": [
+                "artisan",
+                "console",
+                "laravel",
+                "terminal",
+                "web",
+                "web artisan"
+            ],
+            "time": "2016-09-24 13:28:08"
+        },
+        {
             "name": "sebastian/code-unit-reverse-lookup",
             "version": "1.0.0",
             "source": {
@@ -3846,6 +4196,68 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2016-09-25 08:27:07"
+        },
+        {
+            "name": "tracy/tracy",
+            "version": "v2.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/tracy.git",
+                "reference": "9c352f10f41c374c5bb19191e385076430e39a20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/9c352f10f41c374c5bb19191e385076430e39a20",
+                "reference": "9c352f10f41c374c5bb19191e385076430e39a20",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-session": "*",
+                "php": ">=5.4.4"
+            },
+            "require-dev": {
+                "nette/di": "~2.3",
+                "nette/tester": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src"
+                ],
+                "files": [
+                    "src/shortcuts.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "Tracy: useful PHP debugger",
+            "homepage": "https://tracy.nette.org",
+            "keywords": [
+                "debug",
+                "debugger",
+                "nette"
+            ],
+            "time": "2016-09-30 14:17:54"
         },
         {
             "name": "webmozart/assert",

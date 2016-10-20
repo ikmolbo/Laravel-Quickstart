@@ -15,4 +15,7 @@ Auth::routes();
 Route::get('/', 'HomeController@index');
 Route::get('/redirect/{provider}', 'Auth\SocialAuthController@redirect');
 Route::get('/callback/{provider}', 'Auth\SocialAuthController@callback');
+
+// Dev only
 Route::any('adminer', '\Miroc\LaravelAdminer\AdminerAutologinController@index');
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');

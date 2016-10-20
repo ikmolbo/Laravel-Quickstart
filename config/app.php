@@ -175,6 +175,12 @@ return [
          * Package Service Providers...
          */
         \SocialiteProviders\Manager\ServiceProvider::class,
+        Haleks\Markdown\MarkdownServiceProvider::class,
+
+        // Dev only
+        Asvae\ApiTester\ServiceProvider::class,
+        Recca0120\LaravelTracy\ServiceProvider::class,
+        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
 
         //
 
@@ -236,6 +242,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+        'Markdown' => Haleks\Markdown\Facades\Markdown::class,
 
     ],
 

@@ -10,14 +10,18 @@
         "laravel/socialite": "^2.0",
         "socialiteproviders/manager": "^2.1",
         "socialiteproviders/strava": "^2.0",
-        "miroc/laravel-adminer": "dev-master"
+        "haleks/laravel-markdown": "^0.3.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~5.0",
         "symfony/css-selector": "3.1.*",
-        "symfony/dom-crawler": "3.1.*"
+        "symfony/dom-crawler": "3.1.*",
+        "miroc/laravel-adminer": "dev-master",
+        "asvae/laravel-api-tester": "^2.0",
+        "recca0120/laravel-tracy": "^1.7",
+        "rap2hpoutre/laravel-log-viewer": "^0.7.0"
     },
     "autoload": {
         "classmap": [

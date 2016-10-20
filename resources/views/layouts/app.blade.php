@@ -22,6 +22,7 @@
 </head>
 <body>
     <div id="app">
+
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -49,8 +50,18 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
 
-                        <!-- Adminer SQL manager -->
-                        <li><a href="{{ url('adminer') }}">SQL Admin</a></li>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                              Development tools <span class="caret"></span>
+                          </a>
+
+                          <ul class="dropdown-menu" role="menu">
+                            <!-- Adminer SQL manager -->
+                            <li><a href="{{ url('adminer') }}">SQL Admin</a></li>
+                            <li><a href="{{ url('api-tester') }}">API Tester</a></li>
+                            <li><a href="{{ url('logs') }}">Log viewer</a></li>
+                          </ul>
+                        </li>
 
                         <!-- Authentication Links -->
                         @if (Auth::guest())
