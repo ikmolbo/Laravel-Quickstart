@@ -1,22 +1,25 @@
 # Laravel 5.3 Quickstart
 
-This repository comes set up to get started quickly with Laravel 5.3. It is set up to include:
+This repository aims to give a simple but quick start to prototyping a new application with Laravel. It currently uses Laravel 5.3.
 
 ### Getting Started
 
 * I use [Valet](https://laravel.com/docs/5.3/valet). This means zero setup, and the site is ready to go immediately at `http://[project].dev`
-* Run `composer install` or `php composer install`...
+* Create a SQLite database: `touch database/database.sqlite`
+* Copy the `.env` file: `cp .env.example .env`
+* Run `composer install` (or `php composer install`, `composer.phar install` etc, depending on your setup)
 * Run `php artisan migrate` to set up the database.
 * Run `npm install` then `gulp` to set up node modules and process CSS, JS, and copy files to `/public` folder.
 
 ### Database
 
 * A SQLite database for getting up and running without fuss.
+* Uncomment database settings in .env to switch to your MySQL database if required.
 
 ### Authentication
 
-* User authentication scaffolding set up, and database tables created.
-* Social login via oAuth and Laravel Socialite. Google, Facebook, Twitter and Strava ready to go, just add credentials to `.env` file (or `config/services.php`). [More available](http://socialiteproviders.github.io).
+* User authentication scaffolding is already set up.
+* Social login via oAuth and Laravel Socialite. Google, Facebook and Strava ready to go, just add credentials to `.env` file (or `config/services.php`). [More available](http://socialiteproviders.github.io).
 
 ### CSS and Javascript
 
@@ -30,6 +33,7 @@ This repository comes set up to get started quickly with Laravel 5.3. It is set 
 * [API testing tool](https://github.com/asvae/laravel-api-tester) through navbar link (`/api-tester`).
 * [Tracy debugging tool](https://github.com/recca0120/laravel-tracy).
 * [Log Viewer](https://github.com/rap2hpoutre/laravel-log-viewer)
+* A page showing many useful components from the Bootstrap 3 framework at `/kitchen-sink`.
 
 ### More Laravel tools
 
