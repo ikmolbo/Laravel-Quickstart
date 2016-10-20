@@ -12,7 +12,8 @@
     @endif
   </div>
 </div>
-</div>
+
+<example></example>
 
 <div class="container">
   <div class="card card-block">
