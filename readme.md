@@ -5,10 +5,13 @@ This repository aims to give a simple but quick start to prototyping a new appli
 ### Getting Started
 
 * I use [Valet](https://laravel.com/docs/5.3/valet). This means zero setup, and the site is ready to go immediately at `http://[project].dev`
+
+* To set up the project, run `./setup.sh`, which will carry out the following tasks:
 * Create a SQLite database: `touch database/database.sqlite`
 * Copy the `.env` file: `cp .env.example .env`
 * Run `composer install` (or `php composer install`, `composer.phar install` etc, depending on your setup)
 * Run `php artisan migrate` to set up the database.
+* Run `php artisan key:generate` to create an application key.
 * Run `npm install` then `gulp` to set up node modules and process CSS, JS, and copy files to `/public` folder.
 
 ### Database
