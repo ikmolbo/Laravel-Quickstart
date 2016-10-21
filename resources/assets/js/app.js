@@ -24,6 +24,7 @@ const app = new Vue({
     },
 
     methods: {
+        // AJAX form validation: http://taha-sh.com/blog/setting-up-ajax-validation-with-laravel-vuejs-in-no-time
         submitForm: function(e) {
             var form = e.srcElement;
             var action = form.action;
