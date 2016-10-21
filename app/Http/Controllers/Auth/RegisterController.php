@@ -36,7 +36,7 @@ class RegisterController extends Controller
       */
      public function __construct()
      {
-        $this->redirectTo = config('redirect_after_login');
+        $this->redirectTo = config('app.redirect_after_login');
         $this->middleware('guest');
     }
 

@@ -34,7 +34,7 @@ class SocialAccount extends Model
             'email' => $providerUser->getEmail(),
             'name' => $providerUser->getName(),
             'avatar' => $providerUser->getAvatar(),
-            'password' => Hash::make(str_random(8)),
+            'password' => str_random(16),
           ]
         );
       }

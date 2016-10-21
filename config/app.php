@@ -8,7 +8,7 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'redirect_after_login' => env('REDIRECT_AFTER_LOGIN', '/'),
+    'redirect_after_login' => env('REDIRECT_AFTER_LOGIN', 'dashboard'),
 
     /*
     |--------------------------------------------------------------------------

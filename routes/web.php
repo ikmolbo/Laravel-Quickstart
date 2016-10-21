@@ -13,6 +13,12 @@
 
 Auth::routes();
 Route::get('/', 'HomeController@index');
+
+Route::get('/dashboard', ['as' => 'dashboard', 'uses' => 'UserController@index']);
+Route::post('/dashboard/profile', ['uses' => 'UserController@profile']);
+Route::get('/dashboard/password', ['as' => 'password', 'uses' => 'UserController@index']);
+Route::post('/dashboard/password', ['uses' => 'UserController@password']);
+
 Route::get('/redirect/{provider}', 'Auth\SocialAuthController@redirect');
 Route::get('/callback/{provider}', 'Auth\SocialAuthController@callback');
 

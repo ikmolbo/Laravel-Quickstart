@@ -28,7 +28,7 @@ class SocialAuthController extends Controller
     */
    public function __construct()
    {
-      $this->redirectTo = config('redirect_after_login');
+      $this->redirectTo = config('app.redirect_after_login');
    }
 
     public function redirect($provider)
@@ -40,7 +40,6 @@ class SocialAuthController extends Controller
     {
         // To fix problem with logging into several services at once, add ->stateless().
         // See: http://stackoverflow.com/questions/30660847/laravel-socialite-invalidstateexception
-        // $user = $service->createOrGetUser(Socialite::driver($provider)->stateless(), $provider);
         $user = $social->createOrUpdateUser(Socialite::driver($provider)->stateless(), $provider);
         auth()->login($user);
 

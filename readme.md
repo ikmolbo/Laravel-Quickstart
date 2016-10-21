@@ -27,6 +27,10 @@ This repository aims to give a simple but quick start to prototyping a new appli
 * Bootstrap SASS is installed via npm (in `packages.json` file), and is processed by Gulp/Elixir.
 * All styling should be done in the `resources/assets/sass/app.scss` and `resources/assets/sass/_variables.scss` files.
 
+### Email
+
+* Credentials must be added to `.env` or to `config/mail.php` so that password resets work.
+
 ### Development tools (require-dev only)
 
 * [Adminer](https://www.adminer.org) database tool accessible through navbar link (`/adminer`). Logs in automatically to the active database when opened.
